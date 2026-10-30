@@ -12,17 +12,7 @@ This repository contains MATLAB scripts associated with:
 - rateanalysis.mlx — [accepts 3 replicate .csv files with paired OD and fluorescence data/baselines, performs analysis of timing parameters and rates with dipslays]
 - analyze_one_rep.m — [module which performs most of the math, required]
 
-## Requirements
-
-MATLAB [version, if known].
-
-Required toolboxes:
-- [toolbox]
-- [toolbox]
-
 ## Usage
-
-Analysis overview
 
 For each replicate, the OD baseline is fit using a cubic smoothing spline with smoothing parameter 0.2 and subtracted from the corresponding experimental OD trace. The fluorescence baseline is independently fit using a cubic smoothing spline with smoothing parameter 0.7 and subtracted from the experimental fluorescence trace. Baseline-corrected traces are subsequently smoothed using a three-point moving mean.
 
